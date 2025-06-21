@@ -1,4 +1,3 @@
-
 # dashboard.py
 
 import plotly.graph_objects as go
@@ -9,7 +8,7 @@ def create_radar(scores):
 
     fig = go.Figure()
     fig.add_trace(go.Scatterpolar(
-        r=values + [values[0]],  # loop back
+        r=values + [values[0]],  # loop back for radar chart
         theta=categories + [categories[0]],
         fill='toself',
         name='Maturity'
